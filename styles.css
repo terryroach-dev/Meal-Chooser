@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #033f63;
+}
+
+header {
+  background-color: #5b8c5a;
+  color: #e8d7f1;
+  padding: 0.5rem;
+}
+
+.website-link {
+  display: inline-block;
+  color: #033f63;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  transition-property: font-size;
+  transition-duration: 2s;
+}
+
+.website-link:hover,
+.website-link:focus {
+  color: #cfd186;
+  font-size: 1.25rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+.main-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.search {
+  display: flex;
+}
+
+.search-input,
+#search-btn,
+#get-meals-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  height: 2rem;
+  padding: 0.25rem;
+  border: none;
+}
+
+.search-input {
+  background-color: #cfd186;
+  color: #033f63;
+  width: 100%;
+}
+
+#search-btn,
+#get-meals-btn {
+  background-color: #e8d7f1;
+  color: #5b8c5a;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#search-btn:focus,
+#search-btn:hover,
+#get-meals-btn:focus,
+#get-meals-btn:hover {
+  background-color: #5b8c5a;
+  color: #e8d7f1;
+}
+
+.error-section {
+  display: none;
+  margin-top: 1rem;
+  margin-bottom: 00.5rem;
+  color: red;
+  font-weight: 700;
+}
+
+.filters {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: flex-start;
+}
+@media (min-width: 450px) {
+  .filters {
+    align-items: center;
+  }
+}
+
+.filters > div {
+  margin-bottom: 0.75rem;
+}
+
+.filters > div > label {
+  color: #e8d7f1;
+}
+
+select {
+  font-family: "Montserrat", sans-serif;
+  background-color: #5b8c5a;
+  color: #e8d7f1;
+  padding: 0.2rem;
+}
+
+.results {
+  margin-top: 1rem;
+}
+
+#breakfast-results,
+#lunch-results,
+#tea-results,
+#dessert-results,
+#side-results,
+#snack-results {
+  display: none;
+  background-color: #cfd186;
+  color: #033f63;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.meal-type,
+.meal-title,
+.meal-book,
+.meal-page {
+  text-transform: capitalize;
+}
+
+.meal-type {
+  font-size: 1.85rem;
+  text-decoration: underline;
+  margin-bottom: 0.75rem;
+}
+
+.meal-title {
+  margin-bottom: 0.25rem;
+}
+
+.meal-book {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.meal-page {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}

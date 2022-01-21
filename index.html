@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Chooser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">My Meal Chooser</h1>
+      <a
+        href="http://www.terryroach.co.uk/"
+        target="_blank"
+        class="website-link"
+        >www.terryroach.co.uk</a
+      >
+    </header>
+    <main>
+      <div class="main-container">
+        <section class="search">
+          <input
+            class="search-input"
+            type="text"
+            name="search"
+            id="search"
+            placeholder='Search eg "chicken", "lunch"'
+          />
+          <button id="search-btn">search</button>
+        </section>
+        <section class="error-section">
+          <p id="error">Please enter a search with at least 2 characters</p>
+        </section>
+        <section class="filters">
+          <div class="breakfast">
+            <label for="breakfast-meals">Choose number of breakfasts:</label>
+            <select id="breakfast-meals" name="breakfast-meals">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+          <div class="lunch">
+            <label for="lunch-meals">Choose number of lunches:</label>
+            <select id="lunch-meals" name="lunch-meals">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+          <div class="tea">
+            <label for="tea-meals">Choose number of teas:</label>
+            <select id="tea-meals" name="tea-meals">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+          <div class="dessert">
+            <label for="dessert-meals">Choose number of desserts</label>
+            <select id="dessert-meals" name="dessert-meals">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+          <div class="side">
+            <label for="side-meals">Choose number of sides</label>
+            <select id="side-meals" name="side-meals">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+          <div class="snack">
+            <label for="snack-meals">Choose number of snacks</label>
+            <select id="snack-meals" name="snack-meals">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+        </section>
+        <button id="get-meals-btn">get meals</button>
+        <section class="results">
+          <div id="breakfast-results"></div>
+          <div id="lunch-results"></div>
+          <div id="tea-results"></div>
+          <div id="dessert-results"></div>
+          <div id="side-results"></div>
+          <div id="snack-results"></div>
+        </section>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
