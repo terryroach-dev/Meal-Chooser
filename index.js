@@ -1147,6 +1147,7 @@ function renderSearchResults(mealSearchLength, mealTypeEl, mealSearch) {
 }
 
 function searchFood() {
+    const searchItem = searchInput.value.toLowerCase();
     breakfastResultsEl.textContent = "";
     breakfastResultsEl.style.display = "none";
     lunchResultsEl.textContent = "";
@@ -1159,9 +1160,10 @@ function searchFood() {
     sideResultsEl.style.display = "none";
     snackResultsEl.textContent = "";
     snackResultsEl.style.display = "none";
-    if(searchInput.value.length > 1) {
-        const foodSearch = meals.filter(search => search.title.includes(searchInput.value) 
-        || search.type.includes(searchInput.value));
+    
+    if(searchItem.length > 1) {
+        const foodSearch = meals.filter(search => search.title.includes(searchItem)
+        || search.type.includes(searchItem));
         const breakfastSearch = foodSearch.filter(breakfast => breakfast.type === "breakfast");
         if(breakfastSearch.length > 0) {
             breakfastResultsEl.style.display = "block";
@@ -1171,7 +1173,6 @@ function searchFood() {
             breakfastResultsEl.innerHTML = "";
         };
         const lunchSearch = foodSearch.filter(lunch => lunch.type === "lunch");
-        console.log(lunchSearch);
         if(lunchSearch.length > 0) {
             lunchResultsEl.style.display = "block";
             lunchResultsEl.innerHTML = `<h1 class="meal-type">Lunch</h1>`
