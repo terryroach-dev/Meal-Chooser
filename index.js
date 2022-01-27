@@ -60,7 +60,7 @@ const meals = [
         type: "lunch"
     },
     {
-        title: "bolodnese cheese fries",
+        title: "bolognese cheese fries",
         book: "comfort food",
         page: 88,
         type: "tea"
@@ -734,7 +734,7 @@ const meals = [
     {
         title: "lemon and coriander hummus",
         book: "everyday light",
-        page: 234,
+        page: 236,
         type: "snack"
     },
     {
